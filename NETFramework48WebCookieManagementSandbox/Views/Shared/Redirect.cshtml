@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = ViewBag.Title == null ? "Application Redirect" : ViewBag.Title;
+    ViewBag.Label = ViewBag.Label == null ? "Redirecting" : ViewBag.Label;
+    string id = Html.UniqueId();
+}
+
+<a href="@ViewBag.RedirectUrl" class="d-none" id="@id"></a>
+<p>@ViewBag.Label</p>
+
+
+@section scripts {
+    <script type="text/javascript">
+        document.getElementById('@id').click(); 
+    </script>    
+}

@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card border-0 shadow rounded-3 my-5">
+            <div class="card-header bg-success text-bg-success">
+                <h5 class="card-title text-center my-4 fw-light fs-5">Sign In</h5>
+            </div>
+            <div class="card-body p-4 p-sm-5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique sollicitudin nibh sit amet. Quis varius quam quisque id diam. Eget velit aliquet sagittis id consectetur purus. Integer vitae justo eget magna fermentum iaculis. Velit sed ullamcorper morbi tincidunt. Tristique nulla aliquet enim tortor at auctor urna. Magna sit amet purus gravida quis blandit turpis. Magna eget est lorem ipsum dolor. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Malesuada nunc vel risus commodo. Interdum varius sit amet mattis vulputate enim nulla aliquet. Vestibulum lorem sed risus ultricies. Porttitor lacus luctus accumsan tortor posuere ac ut. Venenatis lectus magna fringilla urna porttitor rhoncus. Nullam eget felis eget nunc lobortis.</p>
+                @using (Html.BeginRouteForm("SignIn", FormMethod.Post, new { }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">
+                            Sign
+                            in
+                        </button>
+                    </div>
+                }
+                <div class="mt-5 py-2 text-center">
+                    <div>
+                        <strong class="text-muted">Don’t have an account?</strong>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-link text-success">
+                            Sign up now
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+﻿.jumbotron {
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--bs-gray-300);
+    border-radius: .3rem;
+}

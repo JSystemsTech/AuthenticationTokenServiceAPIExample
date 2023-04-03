@@ -1,0 +1,13 @@
+{
+  "scripts": [
+    "~/Scripts/modernizr-*",
+    "~/Scripts/jquery-{version}.js",
+    "~/Scripts/jquery.validate*",
+    "~/Scripts/bootstrap.bundle.js"
+  ],
+  "styles": [
+    "~/Content/bootstrap.css",
+    "~/Content/Site.css"
+  ],
+  "routeScripts": []
+}
